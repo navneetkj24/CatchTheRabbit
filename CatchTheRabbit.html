@@ -1,0 +1,108 @@
+<html>
+    <head>
+        <title>Catch the Rabbit</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script type="text/javascript" src="javascript/catchtherabbit.js"></script>
+        <link rel="stylesheet" href="css/catchTheRabbit.css"/>
+        <style>
+            body {
+                text-align:center;
+                font-size:100%;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            h2 {
+                font-size:1.5em;
+            }
+
+        </style>
+    </head>
+    <body>
+       
+        <h1 >Catch the Easter Bunny to get your egg!</h1>
+       <img src="https://profsamscott.com/javascript/examples/images/rabbit.png" id="rabbit1" onmouseover="myFunction1()" alt="Catch the rabbit"/>
+        <img src="https://profsamscott.com/javascript/examples/images/rabbit.png" id="rabbit2" onmouseover="myFunction2()" alt="Catch the rabbit"/>
+        <img src="https://profsamscott.com/javascript/examples/images/rabbit.png" id="rabbit3" onmouseover="myFunction3()" alt="Catch the rabbit"/>
+        <img src="https://profsamscott.com/javascript/examples/images/rabbit.png" id="rabbit4" onmouseover="myFunction4()" alt="Catch the rabbit"/>
+        <h2 id="noeggs" onmouseover = "myFunction()">No Easter Eggs for You</h2>
+        <h2 id="yousuck" >Humans suck!!!</h2>
+        
+        </div>
+        <Script>
+          
+
+                
+            function myFunction1(){
+                
+             e=document.getElementById("rabbit1").style.visibility = "hidden";
+             
+             document.getElementById('rabbit2').style.visibility = "visible";
+             document.getElementById('rabbit3').style.visibility = "hidden";
+             document.getElementById('rabbit4').style.visibility = "hidden";
+             document.getElementById('noeggs').style.visibility =  "hidden";
+             document.getElementById('yousuck').style.visibility = "hidden";
+            
+            }
+            
+            
+           
+           
+            function myFunction2(){
+             document.getElementById('rabbit1').style.visibility = "hidden";
+             
+             document.getElementById('rabbit2').style.visibility = "hidden";
+             document.getElementById('rabbit3').style.visibility = "visible";
+             document.getElementById('rabbit4').style.visibility = "hidden";
+             document.getElementById('noeggs').style.visibility = "hidden";
+             document.getElementById('yousuck').style.visibility = "hidden";
+            }
+            
+           
+            
+            function myFunction3(){
+             document.getElementById('rabbit1').style.visibility = "hidden";
+             
+             document.getElementById('rabbit2').style.visibility = "hidden";
+             document.getElementById('rabbit3').style.visibility = "hidden";
+             document.getElementById('rabbit4').style.visibility = "visible";
+             document.getElementById('noeggs').style.visibility = "hidden";
+             document.getElementById('yousuck').style.visibility = "hidden";
+
+            }
+            function myFunction4(){
+             document.getElementById('rabbit1').style.visibility = "hidden";
+             document.getElementById('rabbit2').style.visibility = "hidden";
+             document.getElementById('rabbit3').style.visibility = "hidden";
+             document.getElementById('rabbit4').style.visibility = "hidden";
+             document.getElementById('noeggs').style.visibility = "visible";
+             document.getElementById('yousuck').style.visibility = "hidden";
+             
+            }
+           
+          
+            function myFunction(){
+                document.getElementById('noeggs').style.visibility = "visible";
+               document.getElementById('yousuck').style.visibility = "visible";
+
+           }
+           function myF(){
+
+           }
+               function init(){
+                   window.location.reload();
+               }
+
+            
+
+           
+                        
+            
+              
+
+        </Script>
+        <button id = "h"  type ="button" onclick = "init()" > Reload </button>
+    </body>
+</html>
+
+
